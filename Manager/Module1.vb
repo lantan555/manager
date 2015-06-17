@@ -2,7 +2,7 @@
     Sub slideLeft(el As Panel)
         Dim w = el.Left - 260
         Do Until el.Left = w
-            el.Left = el.Left - 20
+            el.Left = el.Left - 10
         Loop
         'el.Left = el.Left - 260
     End Sub

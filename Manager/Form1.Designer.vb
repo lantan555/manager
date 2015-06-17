@@ -35,7 +35,7 @@ Partial Class MainForm
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbDep = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -155,7 +155,7 @@ Partial Class MainForm
         Me.Panel1.Controls.Add(Me.ProgressBar1)
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.cmbDep)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.btnPlastic)
         Me.Panel1.Controls.Add(Me.btnPK)
@@ -205,13 +205,14 @@ Partial Class MainForm
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "номер сделки"
         '
-        'ComboBox1
+        'cmbDep
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(392, 92)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(237, 24)
-        Me.ComboBox1.TabIndex = 27
+        Me.cmbDep.FormattingEnabled = True
+        Me.cmbDep.Items.AddRange(New Object() {"Кард Экспресс", "КЭ Братск", "КЭ Брянск", "КЭ Москва", "КЭ Нижний Новгород", "КЭ Самара"})
+        Me.cmbDep.Location = New System.Drawing.Point(392, 92)
+        Me.cmbDep.Name = "cmbDep"
+        Me.cmbDep.Size = New System.Drawing.Size(237, 24)
+        Me.cmbDep.TabIndex = 27
         '
         'Label1
         '
@@ -253,7 +254,7 @@ Partial Class MainForm
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbDep As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
